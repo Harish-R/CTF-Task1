@@ -1,0 +1,13 @@
+<h1>
+	Student Info
+</h1>
+
+<%= form_tag(:action => 'show') do %>
+	<p>Name:  <%= text_field_tag('name', params[:name]) %> </p>
+	<p>Roll No:  <%= number_field('rollno', params[:rollno]) %> </p>
+	<p>Department:  <%= text_field_tag('dept', params[:dept]) %> </p>
+	<p>Subject 1: <%= number_field('sub1', params[:sub1]) %> </p>
+	<p>Subject 2: <%= number_field('sub2', params[:sub2]) %> </p>
+	<p>Subject 3: <%= number_field('sub3', params[:sub3]) %> </p>
+	<p> <%= submit_tag("Show") %> </p>
+<% end %>

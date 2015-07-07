@@ -1,0 +1,27 @@
+<h1>
+	Student Info:
+</h1>
+
+<p> Name: <%= params[:name] %> </p>
+<p> Roll No: <%= params[:rollno][0].to_i %> </p>
+<p> Department: <%= params[:dept] %> </p>
+<p><b> Grades </b></p>
+<table>
+	<tr> 
+		<th>Subject</th>
+		<th>Grade</th>
+	<tr>
+	<tr>
+		<td> Subject 1 </td>
+		<td><%= @sub1 %></td>
+		
+	</tr>
+	<tr>
+		<td> Subject 2 </td>
+		<td> <%= @sub2 %></td>
+	</tr>
+	<tr>
+		<td> Subject 3 </td>
+		<td> <%= @sub3 %> </td>
+	<tr>
+</table>
